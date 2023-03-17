@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Открываем порт 3001 для Next.js приложения
-EXPOSE 3001
+EXPOSE 3000
 
 # Запускаем Next.js приложение при старте контейнера
 CMD ["npm", "run", "start"]
