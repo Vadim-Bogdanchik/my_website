@@ -3,7 +3,10 @@
 import React, { useEffect } from 'react'
 import { tagsViews } from '../components/consts/tags.views'
 import ymaps from 'ymaps'
-import mygeo from '../public/Assets/css-logo.png'
+
+import { BsGeo } from 'react-icons/bs'
+
+import { AiOutlineMail } from 'react-icons/ai'
 
 const Contacts = () => {
 	useEffect(() => {
@@ -33,8 +36,8 @@ const Contacts = () => {
 						iconImageHref: 'https://bogdanchik.ru/mygeo.png',
 						// iconImageHref:
 						// 	'https://static.tildacdn.com/tild3061-3235-4537-b066-616662373363/Group_783.svg',
-						iconImageSize: [90, 90],
-						iconImageOffset: [-65, -110],
+						iconImageSize: [80, 80],
+						iconImageOffset: [-42, -110],
 					}
 				)
 
@@ -63,7 +66,20 @@ const Contacts = () => {
 						{tagsViews.h1Out}
 					</span>
 				</div>
+
+				{/* Yandex map */}
 				<div id='first_map' className='w-full h-[400px] my-5'></div>
+
+				<div className='flex flex-col gap-5 items-center justify-center w-full my-10'>
+					<div className='flex gap-3 items-center justify-start text-xl'>
+						<BsGeo />
+						Москва, Скобелевская 5
+					</div>
+					<div className='flex gap-3 items-center justify-start text-xl'>
+						<AiOutlineMail />
+						hello@bogdanchik.ru
+					</div>
+				</div>
 			</div>
 		</section>
 	)

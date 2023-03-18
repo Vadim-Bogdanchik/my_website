@@ -24,7 +24,7 @@ const Stack = () => {
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color mt-3'>
 					{tagsViews.pIn}
 				</span>
-				<p>
+				<p className='text_indent'>
 					Full Stack разработчик - это своеобразный швейцарский нож в мире
 					веб-разработки. В своей работе я подбираю для каждого проекта наиболее
 					оптимальный стек технологий. Цель - сократить время разработки, не в

@@ -37,9 +37,9 @@ const MobileMenu = () => {
 				<div className='flex items-top justify-between w-full h-full bg-sidebar-bg px-10 shadow-2xl pt-3'>
 					<div className='flex flex-col items-center'>
 						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-styled-green rounded-full text-sidebar-bg'>
-							<Link href='#contacts' scroll={false}>
+							<a href='#contacts'>
 								<FaRegAddressCard size={20} />
-							</Link>
+							</a>
 						</div>
 
 						<span className='text-[12px] text-white py-1'>Контакты</span>
@@ -66,9 +66,9 @@ const MobileMenu = () => {
 					</div>
 					<div className='flex flex-col items-center'>
 						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-styled-green rounded-full text-sidebar-bg'>
-							<Link href='#main'>
+							<a href='#main'>
 								<MdArrowUpward size={20} />
-							</Link>
+							</a>
 						</div>
 						<span className='text-[12px] text-white py-1'>Вверх</span>
 					</div>

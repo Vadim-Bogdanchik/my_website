@@ -8,7 +8,7 @@ import photo from '../public/Assets/my_photo.jpg'
 
 const Hero = () => {
 	return (
-		<div>
+		<div >
 			<a id='main' />
 			{/* top */}
 			<div className='maintop absolute top-0 left-0 flex flex-col lg:pl-[130px] pt-[10px] w-full select-none dancing_fnt'>
@@ -35,14 +35,14 @@ const Hero = () => {
 
 				<div className='relative'>
 					<h1 className='text-white font-[700] text-3xl sm:text-6xl md:text-7xl lg:text-7xl 2xl:text-8xl '>
-						Привет,
+						Привет!
 						<br />
 						<span className='absolute inline-block text-styled-red transform translate-x-[1.6rem] sm:translate-x-[3.4rem] md:translate-x-[4rem] 2xl:translate-x-[5.5rem] -z-10'>
 							В
 						</span>
 						Я <span className='text-styled-green'>В</span>адим Богданчик,
 						<br />
-						Веб-разработчик
+						Full-stack разработчик
 					</h1>
 				</div>
 
@@ -53,10 +53,10 @@ const Hero = () => {
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color my-1'>
 					{tagsViews.pIn}
 				</span>
-				<p className='text-white text-[14px] md:text-xl z-10 pr-9 t'>
-					Full-stack разработчик, стремлюсь создавать качественные и
-					производительные приложения. Моя цель - разработка онлайн-сервисов от
-					идеи до продакшена используя передовой стек инструментов.
+				<p className='text-white text-[14px] md:text-xl z-10 pr-9'>
+					Стремлюсь создавать качественные и производительные приложения. Моя
+					цель - разработка онлайн-сервисов от идеи до продакшена используя
+					передовой стек инструментов.
 				</p>
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color'>
 					{tagsViews.pOut}

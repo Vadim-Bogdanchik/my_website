@@ -8,6 +8,10 @@
 	font-family: 'Dancing Script', cursive;
 }
 
+.text_indent {
+	text-indent: 30px;
+}
+
 @layer base {
 	::-webkit-scrollbar-thumb {
 		@apply bg-transparent shadow-sm;

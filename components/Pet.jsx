@@ -24,10 +24,19 @@ const Pet = () => {
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color mt-3'>
 					{tagsViews.pIn}
 				</span>
-				<p>
-					В своей разработке я подбираю для каждого проекта наиболее оптимальный
-					стек инструментов. Цель - сократить время разработки не в ущерб
-					производительности и функциональности продукта.
+				<p className='text_indent'>
+					Я разрабатываю свой pet-проект онлайн-сервиса, который использует технологии нейронных сетей для обработки текстов. Мой сервис
+					поможет быстро создавать уникальный контент, оптимизированный под	потребности пользователей. Просто введите ключевые слова, и мой сервис самостоятельно создаст тексты для вас. Уверен, что мой сервис сможет	помочь людям, которые ищут быстрое и простое решение для создания	контента.
+				</p>
+				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color'>
+					{tagsViews.pOut}
+				</span>
+				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color mt-3'>
+					{tagsViews.pIn}
+				</span>
+				<p className='text_indent'>
+					Это лишь мой MVP продукта, и я работаю над его улучшением, чтобы
+					обеспечить более широкий функционал в будущем.
 				</p>
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color'>
 					{tagsViews.pOut}

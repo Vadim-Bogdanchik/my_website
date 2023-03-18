@@ -4,9 +4,7 @@ import { AiOutlineWhatsApp, AiFillGithub } from 'react-icons/ai'
 import { SlSocialVkontakte } from 'react-icons/sl'
 
 const SideBar = ({ menuShow }) => {
-
 	useEffect(() => {
-
 		document.body.style.overflow = menuShow ? 'hidden' : 'auto'
 
 		return () => {
@@ -44,52 +42,48 @@ const SideBar = ({ menuShow }) => {
 				<div className='nav w-full h-max duration-500'>
 					<ul className='text-center text-p-color text-2xl'>
 						<li className='py-5 border-t border-tag-color '>
-							<Link
+							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
 								href='#main'
-								scroll={false}
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
 							>
 								Главная
-							</Link>
+							</a>
 						</li>
 						<li className='py-5 border-t border-tag-color'>
-							<Link
+							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
 								href='#pet'
-								scroll={false}
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
 							>
 								Pet
-							</Link>
+							</a>
 						</li>
 						<li className='py-5 border-t border-tag-color'>
-							<Link
+							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
 								href='#stack'
-								scroll={false}
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
 							>
 								Stack
-							</Link>
+							</a>
 						</li>
 						<li className='py-5 border-y border-tag-color'>
-							<Link
+							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
 								href='#contacts'
-								scroll={false}
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
 							>
 								Контакты
-							</Link>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -136,7 +130,7 @@ const SideBar = ({ menuShow }) => {
 				</div>
 				<div className='nav w-full h-max'>
 					<ul className='text-center text-p-color text-lg duration-500'>
-						<Link
+						<a
 							className='group font-medium duration-200 hover:text-styled-green'
 							href='#main'
 							scroll={false}
@@ -146,30 +140,28 @@ const SideBar = ({ menuShow }) => {
 								Главная
 							</li>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
-						</Link>
-						<Link
+						</a>
+						<a
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='#stack'
-							scroll={false}
+							href='#pet'
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 							<li className='py-5 cursor-pointer border-t border-tag-color'>
 								Pet
 							</li>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
-						</Link>
-						<Link
+						</a>
+						<a
 							className='group font-medium duration-200 hover:text-styled-green'
 							href='#stack'
-							scroll={false}
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 							<li className='py-5 cursor-pointer border-t border-tag-color'>
 								Stack
 							</li>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
-						</Link>
-						<Link
+						</a>
+						<a
 							className='group font-medium duration-200 hover:text-styled-green'
 							href='#contacts'
 							scroll={false}
@@ -179,7 +171,7 @@ const SideBar = ({ menuShow }) => {
 								Контакты
 							</li>
 							<div className='relative w-full h-0.5 bg-teal-500 scale-x-0 group-hover:scale-x-100 transition-transform' />
-						</Link>
+						</a>
 					</ul>
 				</div>
 				<div className='footer flex gap-3 items-center justify-center pb-[130px] text-xl text-p-color'>

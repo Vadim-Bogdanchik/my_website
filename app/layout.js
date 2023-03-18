@@ -21,10 +21,13 @@ export default function RootLayout({ children }) {
 	const [menuShow, setMenuShow] = useState(false)
 
 	return (
-		<html lang='ru' className={` ${montserrat.className} font-sans bg-main-bg`}>
+		<html
+			lang='ru'
+			className={` ${montserrat.className} font-sans bg-main-bg`}
+			style={{ scrollBehavior: 'smooth' }}
+		>
 			<head />
 			<body>
-				
 				{/* Mobile menu */}
 				<div
 					onClick={() => {
