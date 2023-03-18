@@ -56,7 +56,7 @@ const SideBar = ({ menuShow }) => {
 									setMenuShow(!menuShow)
 								}}
 							>
-								Мой <span className='font-extrabold'>Pet</span>
+								Pet
 							</Link>
 						</li>
 						<li className='py-5 border-t border-tag-color'>
@@ -68,7 +68,7 @@ const SideBar = ({ menuShow }) => {
 									setMenuShow(!menuShow)
 								}}
 							>
-								Мой <span className='font-extrabold'>Stack</span>
+								Stack
 							</Link>
 						</li>
 						<li className='py-5 border-y border-tag-color'>
@@ -146,7 +146,7 @@ const SideBar = ({ menuShow }) => {
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 							<li className='py-5 cursor-pointer border-t border-tag-color'>
-								Мой <span className='font-bold'>Pet</span>
+								Pet
 							</li>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 						</Link>
@@ -157,7 +157,7 @@ const SideBar = ({ menuShow }) => {
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 							<li className='py-5 cursor-pointer border-t border-tag-color'>
-								Мой <span className='font-bold'>Stack</span>
+								Stack
 							</li>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 						</Link>
