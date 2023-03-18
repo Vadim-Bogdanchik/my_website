@@ -2,16 +2,9 @@ import React from 'react'
 import Image from 'next/image'
 
 //* Project imports
+import { tagsViews } from '../components/consts/tags.views'
 import ScrollDown from './ScrollDown'
 import photo from '../public/Assets/my_photo.jpg'
-
-const htmlVar1 = '<html>'
-const bodyVar1 = '<body>'
-const h1Var1 = '<h1>'
-const h1Var2 = '<h1 />'
-const pVar1 = '<p>'
-const pVar2 = '<p />'
-const imgT = '<img />'
 
 const Hero = () => {
 	return (
@@ -20,10 +13,10 @@ const Hero = () => {
 			{/* top */}
 			<div className='maintop absolute top-0 left-0 flex flex-col lg:pl-[130px] pt-[10px] w-full select-none dancing_fnt'>
 				<span className='text-[15px] md:text-2xl from-stone-100 text-tag-color pl-[10px] md:pl-[20px]'>
-					{htmlVar1}
+					{tagsViews.htmlIn}
 				</span>
 				<span className='text-[15px] md:text-2xl from-stone-100 text-tag-color pl-[20px] md:pl-[40px]'>
-					{bodyVar1}
+					{tagsViews.bodyIn}
 				</span>
 			</div>
 
@@ -31,20 +24,20 @@ const Hero = () => {
 			<div className='container relative flex flex-col justify-center items-start h-screen w-full select-none pl-[50px] lg:pl-[230px]'>
 				<div className='hidden lg:block absolute top-[9%] right-[5%]'>
 					<span className='dancing_fnt text-3xl from-stone-100 text-tag-color'>
-						{imgT}
+						{tagsViews.imgT}
 					</span>
 					<Image src={photo} alt='my photo' height={700} />
 				</div>
 
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color'>
-					{h1Var1}
+					{tagsViews.h1In}
 				</span>
 
 				<div className='relative'>
-					<h1 className='text-white font-[700] text-4xl sm:text-6xl md:text-7xl lg:text-7xl 2xl:text-8xl '>
+					<h1 className='text-white font-[700] text-3xl sm:text-6xl md:text-7xl lg:text-7xl 2xl:text-8xl '>
 						Привет,
 						<br />
-						<span className='absolute inline-block text-styled-red transform translate-x-[2rem] sm:translate-x-[3.4rem] md:translate-x-[4rem] 2xl:translate-x-[5.5rem] -z-10'>
+						<span className='absolute inline-block text-styled-red transform translate-x-[1.6rem] sm:translate-x-[3.4rem] md:translate-x-[4rem] 2xl:translate-x-[5.5rem] -z-10'>
 							В
 						</span>
 						Я <span className='text-styled-green'>В</span>адим Богданчик,
@@ -54,19 +47,19 @@ const Hero = () => {
 				</div>
 
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color mt-[19px]'>
-					{h1Var2}
+					{tagsViews.h1Out}
 				</span>
 
 				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color my-1'>
-					{pVar1}
+					{tagsViews.pIn}
 				</span>
 				<p className='text-white text-[14px] md:text-xl z-10 pr-9 t'>
 					Full-stack разработчик, стремлюсь создавать качественные и
 					производительные приложения. Моя цель - разработка онлайн-сервисов от
 					идеи до продакшена используя передовой стек инструментов.
 				</p>
-				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color my-1'>
-					{pVar2}
+				<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color'>
+					{tagsViews.pOut}
 				</span>
 
 				<div className='mt-3'>

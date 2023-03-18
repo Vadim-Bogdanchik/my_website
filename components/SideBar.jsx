@@ -62,7 +62,7 @@ const SideBar = ({ menuShow }) => {
 						<li className='py-5 border-t border-tag-color'>
 							<Link
 								className='font-medium text-white duration-200 hover:text-styled-green'
-								href='#skills'
+								href='#stack'
 								scroll={false}
 								onClick={() => {
 									setMenuShow(!menuShow)
@@ -141,7 +141,7 @@ const SideBar = ({ menuShow }) => {
 						</Link>
 						<Link
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='#skills'
+							href='#stack'
 							scroll={false}
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
@@ -152,7 +152,7 @@ const SideBar = ({ menuShow }) => {
 						</Link>
 						<Link
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='#skills'
+							href='#stack'
 							scroll={false}
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />

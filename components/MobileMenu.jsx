@@ -36,7 +36,7 @@ const MobileMenu = () => {
 			>
 				<div className='flex items-top justify-between w-full h-full bg-sidebar-bg px-10 shadow-2xl pt-3'>
 					<div className='flex flex-col items-center'>
-						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-tag-color rounded-full text-white'>
+						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-styled-green rounded-full text-sidebar-bg'>
 							<Link href='#contacts' scroll={false}>
 								<FaRegAddressCard size={20} />
 							</Link>
@@ -45,7 +45,7 @@ const MobileMenu = () => {
 						<span className='text-[12px] text-white py-1'>Контакты</span>
 					</div>
 					<div className='flex flex-col items-center'>
-						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-tag-color rounded-full text-white'>
+						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-styled-green rounded-full text-sidebar-bg'>
 							<Link
 								href='https://wa.me/79099929991?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!'
 								target='_blank'
@@ -57,15 +57,15 @@ const MobileMenu = () => {
 						<span className='text-[12px] text-white py-1'>WhatsApp</span>
 					</div>
 					<div className='flex flex-col items-center'>
-						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-tag-color rounded-full text-white'>
-							<Link href='/resumeBogdanchikVA.pdf'>
+						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-styled-green rounded-full text-sidebar-bg'>
+							<a href='/resumeBogdanchikVA.pdf' download>
 								<FaRegFilePdf size={20} />
-							</Link>
+							</a>
 						</div>
 						<span className='text-[12px] text-white py-1'>Резюме</span>
 					</div>
 					<div className='flex flex-col items-center'>
-						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-tag-color rounded-full text-white'>
+						<div className='w-1/4 flex items-center justify-center w-[40px] h-[40px] bg-styled-green rounded-full text-sidebar-bg'>
 							<Link href='#main'>
 								<MdArrowUpward size={20} />
 							</Link>
