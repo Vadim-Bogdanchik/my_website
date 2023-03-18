@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Link from 'next/link'
 import { AiOutlineWhatsApp, AiFillGithub } from 'react-icons/ai'
 import { SlSocialVkontakte } from 'react-icons/sl'
 
-
-
 const SideBar = ({ menuShow }) => {
+
+	useEffect(() => {
+
+		document.body.style.overflow = menuShow ? 'hidden' : 'auto'
+
+		return () => {
+			document.body.style.overflow = 'auto'
+		}
+	}, [menuShow])
+
 	return (
 		<div>
 			{/* Mobile menu container */}
