@@ -26,7 +26,7 @@ const SideBar = ({ menuShow }) => {
 					<div className='relative logo cursor-pointer h-max w-max'>
 						<div className='flex items-center justify-center text-8xl font-bold'>
 							<span className=' text-styled-green z-20'>В</span>
-							<span className='absolute inline-block text-styled-red transform -translate-x-[0.4rem] z-19'>
+							<span className='absolute inline-block text-styled-red transform -translate-x-[0.4rem] z-19 bg-gradient-to-r text-transparent bg-clip-text animate-gradient'>
 								В
 							</span>
 						</div>
@@ -115,8 +115,10 @@ const SideBar = ({ menuShow }) => {
 				<div className='top h-[200px] bg-black flex flex-col items-center justify-center'>
 					<div className='logo cursor-pointer h-max w-max'>
 						<div className='flex items-center justify-center text-8xl font-bold'>
-							<span className=' text-styled-green z-20'>В</span>
-							<span className='absolute inline-block text-styled-red transform -translate-x-[0.4rem] z-19'>
+							<span className='z-20 text-styled-green font-bold'>
+								В
+							</span>
+							<span className='absolute inline-block text-styled-red transform -translate-x-[0.4rem] z-19 '>
 								В
 							</span>
 						</div>

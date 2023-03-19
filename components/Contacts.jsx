@@ -19,13 +19,6 @@ const Contacts = () => {
 					controls: [],
 				})
 
-				// var myGeoObject = new ymaps.GeoObject({
-				// 	geometry: {
-				// 		type: 'Point', // тип геометрии - точка
-				// 		coordinates: [55.549577, 37.555643], // координаты точки
-				// 	},
-				// })
-
 				var myPlacemark = new ymaps.Placemark(
 					[55.549577, 37.555643],
 					{
@@ -34,15 +27,12 @@ const Contacts = () => {
 					{
 						iconLayout: 'default#image',
 						iconImageHref: 'https://bogdanchik.ru/mygeo.png',
-						// iconImageHref:
-						// 	'https://static.tildacdn.com/tild3061-3235-4537-b066-616662373363/Group_783.svg',
 						iconImageSize: [80, 80],
 						iconImageOffset: [-42, -110],
 					}
 				)
-
+				myMap.behaviors.disable('drag')
 				myMap.behaviors.disable('scrollZoom')
-				// myMap.geoObjects.add(myGeoObject)
 				myMap.geoObjects.add(myPlacemark)
 			})
 			.catch(error => console.log(error))
@@ -57,7 +47,7 @@ const Contacts = () => {
 						{tagsViews.h1In}
 					</span>
 					<h2 className=' text-white font-[700] text-4xl sm:text-6xl md:text-7xl lg:text-7xl 2xl:text-8xl'>
-						<span className='absolute inline-block text-styled-red transform translate-x-[5.6rem] sm:translate-x-[9.5rem] md:translate-x-[11.5rem] 2xl:translate-x-[5.5rem] -z-10'>
+						<span className='absolute inline-block text-styled-red transform translate-x-[5.6rem] sm:translate-x-[9.5rem] md:translate-x-[11.5rem] 2xl:translate-x-[15rem] -z-10'>
 							контакты
 						</span>
 						Мои <span className='text-styled-green'>контакты</span>

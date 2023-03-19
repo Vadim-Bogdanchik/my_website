@@ -11,7 +11,7 @@ const Pet = () => {
 						{tagsViews.h1In}
 					</span>
 					<h1 className=' text-white font-[700] text-4xl sm:text-6xl md:text-7xl lg:text-7xl 2xl:text-8xl'>
-						<span className='absolute inline-block text-styled-red transform translate-x-[5.6rem] sm:translate-x-[9.5rem] md:translate-x-[11.5rem] 2xl:translate-x-[5.5rem] -z-10'>
+						<span className='absolute inline-block text-styled-red transform translate-x-[5.6rem] sm:translate-x-[9.5rem] md:translate-x-[11.5rem] 2xl:translate-x-[15rem] -z-10'>
 							pet
 						</span>
 						Мой <span className='text-styled-green'>pet</span>-проект
