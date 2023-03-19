@@ -1,4 +1,5 @@
 import React from 'react'
+import StackTable from './stack.table'
 import { tagsViews } from './consts/tags.views'
 
 const Stack = () => {
@@ -34,7 +35,7 @@ const Stack = () => {
 					{tagsViews.pOut}
 				</span>
 
-				<div className='flex flex-col items-startw-full h-[200px]'>g</div>
+				<StackTable />
 			</div>
 		</section>
 	)

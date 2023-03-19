@@ -1,9 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { AiOutlineWhatsApp, AiFillGithub } from 'react-icons/ai'
 import { SlSocialVkontakte } from 'react-icons/sl'
 
-const SideBar = ({ menuShow }) => {
+import { MdClose } from 'react-icons/md'
+import { AiOutlineMenu } from 'react-icons/ai'
+
+const SideBar = () => {
+	const [menuShow, setMenuShow] = useState(false)
+
 	useEffect(() => {
 		document.body.style.overflow = menuShow ? 'hidden' : 'auto'
 
@@ -14,6 +19,20 @@ const SideBar = ({ menuShow }) => {
 
 	return (
 		<div>
+			{/* Mobile menu button */}
+			<div
+				onClick={() => {
+					setMenuShow(!menuShow)
+				}}
+				className='absolute cursor-pointer top-2 right-2 mbile-menu text-white bg-sidebar-bg p-2 block lg:hidden z-30'
+			>
+				{menuShow ? (
+					<MdClose className='text-4xl' />
+				) : (
+					<AiOutlineMenu className='text-4xl' />
+				)}
+			</div>
+
 			{/* Mobile menu container */}
 			<div
 				className={
@@ -115,9 +134,7 @@ const SideBar = ({ menuShow }) => {
 				<div className='top h-[200px] bg-black flex flex-col items-center justify-center'>
 					<div className='logo cursor-pointer h-max w-max'>
 						<div className='flex items-center justify-center text-8xl font-bold'>
-							<span className='z-20 text-styled-green font-bold'>
-								В
-							</span>
+							<span className='z-20 text-styled-green font-bold'>В</span>
 							<span className='absolute inline-block text-styled-red transform -translate-x-[0.4rem] z-19 '>
 								В
 							</span>
@@ -134,7 +151,7 @@ const SideBar = ({ menuShow }) => {
 					<ul className='text-center text-p-color text-lg duration-500'>
 						<a
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='#main'
+							href='/#main'
 							scroll={false}
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />

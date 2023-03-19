@@ -1,12 +1,13 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 
 import SideBar from '../components/SideBar'
 import Footer from '../components/Footer'
+import MobileBottomMenu from '../components/BottomMenu'
+import { tagsViews } from '../components/consts/tags.views'
 
-import { MdClose } from 'react-icons/md'
-import { AiOutlineMenu } from 'react-icons/ai'
+
 
 import './globals.css'
 import { Montserrat } from 'next/font/google'
@@ -18,35 +19,33 @@ const montserrat = Montserrat({
 })
 
 export default function RootLayout({ children }) {
-	const [menuShow, setMenuShow] = useState(false)
+
 
 	return (
 		<html
 			lang='ru'
 			className={` ${montserrat.className} font-sans bg-main-bg`}
-			style={{ scrollBehavior: 'smooth' }}
+			style={{ scrollBehavior:'smooth' }}
 		>
 			<head />
 			<body>
-				{/* Mobile menu */}
-				<div
-					onClick={() => {
-						setMenuShow(!menuShow)
-					}}
-					className='absolute cursor-pointer top-2 right-2 mbile-menu text-white bg-sidebar-bg p-2 block lg:hidden z-30'
-				>
-					{menuShow ? (
-						<MdClose className='text-4xl' />
-					) : (
-						<AiOutlineMenu className='text-4xl' />
-					)}
+				{/* top tags view */}
+				<div className='maintop flex flex-col lg:pl-[130px] pt-[10px] w-full select-none dancing_fnt'>
+					<span className='text-[15px] md:text-2xl from-stone-100 text-tag-color pl-[10px] md:pl-[20px]'>
+						{tagsViews.htmlIn}
+					</span>
+					<span className='text-[15px] md:text-2xl from-stone-100 text-tag-color pl-[20px] md:pl-[40px]'>
+						{tagsViews.bodyIn}
+					</span>
 				</div>
+				
 
-				<SideBar menuShow={menuShow} />
+				<SideBar />
 
 				{children}
 
 				<Footer />
+				<MobileBottomMenu />
 			</body>
 		</html>
 	)

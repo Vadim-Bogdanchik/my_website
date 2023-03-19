@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react'
 import { MdArrowUpward } from 'react-icons/md'
 import { FaRegAddressCard, FaWhatsapp, FaRegFilePdf } from 'react-icons/fa'
 
-const MobileMenu = () => {
+const BottomMenu = () => {
 	const [menuShow, setMenuShow] = useState(false)
 
 	useEffect(() => {
@@ -78,4 +78,4 @@ const MobileMenu = () => {
 	)
 }
 
-export default MobileMenu
+export default BottomMenu

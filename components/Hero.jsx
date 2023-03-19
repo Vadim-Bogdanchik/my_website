@@ -10,15 +10,7 @@ const Hero = () => {
 	return (
 		<div >
 			<a id='main' />
-			{/* top */}
-			<div className='maintop absolute top-0 left-0 flex flex-col lg:pl-[130px] pt-[10px] w-full select-none dancing_fnt'>
-				<span className='text-[15px] md:text-2xl from-stone-100 text-tag-color pl-[10px] md:pl-[20px]'>
-					{tagsViews.htmlIn}
-				</span>
-				<span className='text-[15px] md:text-2xl from-stone-100 text-tag-color pl-[20px] md:pl-[40px]'>
-					{tagsViews.bodyIn}
-				</span>
-			</div>
+
 
 			<ScrollDown />
 			<div className='container relative flex flex-col justify-center items-start h-screen w-full select-none pl-[50px] lg:pl-[230px]'>

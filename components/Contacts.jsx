@@ -27,7 +27,7 @@ const Contacts = () => {
 					{
 						iconLayout: 'default#image',
 						iconImageHref: 'https://bogdanchik.ru/mygeo.png',
-						iconImageSize: [80, 80],
+						iconImageSize: [80, 100],
 						iconImageOffset: [-42, -110],
 					}
 				)
