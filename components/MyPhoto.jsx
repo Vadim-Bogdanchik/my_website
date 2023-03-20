@@ -7,7 +7,7 @@ const imgT = '<img />'
 const MyPhoto = () => {
 	return (
 		<div className='block md:hidden container relative flex flex-col justify-center items-start h-max w-full select-none lg:pl-[230px] py-16 px-7 md:px-0'>
-			<span className='dancing_fnt text-xl from-stone-100 text-tag-color'>
+			<span className='dancing_fnt text-[15px] md:text-2xl from-stone-100 text-tag-color'>
 				{imgT}
 			</span>
 			<Image src={photo} alt='my photo' />

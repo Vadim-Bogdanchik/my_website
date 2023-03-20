@@ -45,7 +45,7 @@ const SideBar = () => {
 					<div className='relative logo cursor-pointer h-max w-max'>
 						<div className='flex items-center justify-center text-8xl font-bold'>
 							<span className=' text-styled-green z-20'>В</span>
-							<span className='absolute inline-block text-styled-red transform -translate-x-[0.4rem] z-19 bg-gradient-to-r text-transparent bg-clip-text animate-gradient'>
+							<span className='absolute inline-block text-styled-red transform -translate-x-[0.4rem] z-19'>
 								В
 							</span>
 						</div>
@@ -63,7 +63,7 @@ const SideBar = () => {
 						<li className='py-5 border-t border-tag-color '>
 							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
-								href='#main'
+								href='/#main'
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
@@ -74,7 +74,7 @@ const SideBar = () => {
 						<li className='py-5 border-t border-tag-color'>
 							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
-								href='#pet'
+								href='/#pet'
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
@@ -96,7 +96,7 @@ const SideBar = () => {
 						<li className='py-5 border-y border-tag-color'>
 							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
-								href='#contacts'
+								href='/#contacts'
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
@@ -162,7 +162,7 @@ const SideBar = () => {
 						</a>
 						<a
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='#pet'
+							href='/#pet'
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 							<li className='py-5 cursor-pointer border-t border-tag-color'>
@@ -172,7 +172,7 @@ const SideBar = () => {
 						</a>
 						<a
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='#stack'
+							href='/#stack'
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 							<li className='py-5 cursor-pointer border-t border-tag-color'>
@@ -182,7 +182,7 @@ const SideBar = () => {
 						</a>
 						<a
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='#contacts'
+							href='/#contacts'
 							scroll={false}
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { tagsViews } from '../components/consts/tags.views'
 
 const Footer = () => {
