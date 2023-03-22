@@ -67,7 +67,7 @@ const Pet = () => {
 									Подробнее...
 								</button>
 							</Link>
-							<Link
+							{/* <Link
 								className='w-full'
 								href='https://mielofon.online/'
 								target='_blank'
@@ -75,7 +75,7 @@ const Pet = () => {
 								<button className='w-full sm:w-max sm:my-5 relative border-2 font-medium border-styled-green bg-transparent py-2.5 px-5 uppercase text-styled-green transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-styled-green before:transition-transform before:duration-300 before:content-[` `] hover:text-sidebar-bg before:hover:scale-x-100'>
 									Demo
 								</button>
-							</Link>
+							</Link> */}
 						</div>
 					</div>
 				</div>

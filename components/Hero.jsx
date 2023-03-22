@@ -11,9 +11,8 @@ const Hero = () => {
 		<div >
 			<a id='main' />
 
-
 			<ScrollDown />
-			<div className='container relative flex flex-col justify-center items-start h-screen w-full select-none pl-[50px] lg:pl-[230px]'>
+			<div className='container relative flex flex-col justify-start items-start h-screen w-full select-none pl-[50px] lg:pl-[230px] mt-20'>
 				<div className='hidden lg:block absolute top-[9%] right-[5%]'>
 					<span className='dancing_fnt text-3xl from-stone-100 text-tag-color'>
 						{tagsViews.imgT}

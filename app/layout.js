@@ -5,9 +5,8 @@ import React from 'react'
 import SideBar from '../components/SideBar'
 import Footer from '../components/Footer'
 import MobileBottomMenu from '../components/BottomMenu'
+import Section99 from '@/components/Section99'
 import { tagsViews } from '../components/consts/tags.views'
-
-
 
 import './globals.css'
 import { Montserrat } from 'next/font/google'
@@ -19,16 +18,14 @@ const montserrat = Montserrat({
 })
 
 export default function RootLayout({ children }) {
-
-
 	return (
 		<html
 			lang='ru'
 			className={` ${montserrat.className} font-sans bg-main-bg`}
-			style={{ scrollBehavior:'smooth' }}
+			style={{ scrollBehavior: 'smooth' }}
 		>
 			<head />
-			<body>
+			<body >
 				{/* top tags view */}
 				<div className='maintop flex flex-col lg:pl-[130px] pt-[10px] w-full select-none dancing_fnt'>
 					<span className='text-[15px] md:text-2xl from-stone-100 text-tag-color pl-[10px] md:pl-[20px]'>
@@ -38,13 +35,14 @@ export default function RootLayout({ children }) {
 						{tagsViews.bodyIn}
 					</span>
 				</div>
-				
 
 				<SideBar />
 
 				{children}
 
+				<Section99 />
 				<Footer />
+
 				<MobileBottomMenu />
 			</body>
 		</html>
