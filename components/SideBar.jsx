@@ -74,23 +74,23 @@ const SideBar = () => {
 						<li className='py-5 border-t border-tag-color'>
 							<a
 								className='font-medium text-white duration-200 hover:text-styled-green'
-								href='/#pet'
-								onClick={() => {
-									setMenuShow(!menuShow)
-								}}
-							>
-								Pet
-							</a>
-						</li>
-						<li className='py-5 border-t border-tag-color'>
-							<a
-								className='font-medium text-white duration-200 hover:text-styled-green'
 								href='#stack'
 								onClick={() => {
 									setMenuShow(!menuShow)
 								}}
 							>
 								Stack
+							</a>
+						</li>
+						<li className='py-5 border-t border-tag-color'>
+							<a
+								className='font-medium text-white duration-200 hover:text-styled-green'
+								href='/#pet'
+								onClick={() => {
+									setMenuShow(!menuShow)
+								}}
+							>
+								Pet
 							</a>
 						</li>
 						<li className='py-5 border-y border-tag-color'>
@@ -162,21 +162,21 @@ const SideBar = () => {
 						</a>
 						<a
 							className='group font-medium duration-200 hover:text-styled-green'
-							href='/#pet'
-						>
-							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
-							<li className='py-5 cursor-pointer border-t border-tag-color'>
-								Pet
-							</li>
-							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
-						</a>
-						<a
-							className='group font-medium duration-200 hover:text-styled-green'
 							href='/#stack'
 						>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 							<li className='py-5 cursor-pointer border-t border-tag-color'>
 								Stack
+							</li>
+							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
+						</a>
+						<a
+							className='group font-medium duration-200 hover:text-styled-green'
+							href='/#pet'
+						>
+							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
+							<li className='py-5 cursor-pointer border-t border-tag-color'>
+								Pet
 							</li>
 							<div className='relative w-full h-0.5 bg-teal-500 translate-y-0.5 scale-x-0 group-hover:scale-x-100 transition-transform' />
 						</a>
