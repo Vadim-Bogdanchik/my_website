@@ -40,7 +40,7 @@ export default function RootLayout({ children }) {
 
 				{children}
 
-				<Section99 />
+				{/* <Section99 /> */}
 				<Footer />
 
 				<MobileBottomMenu />
