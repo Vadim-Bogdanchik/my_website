@@ -62,20 +62,21 @@ const Pet = () => {
 							{tagsViews.pOut}
 						</span>
 						<div className='flex flex-col sm:flex-row gap-5 sm:gap-3 w-full sm:w-[60%] h-max mt-5 sm:mt-0'>
-							<Link className='w-full' href='/pet'>
-								<button className='w-full sm:w-max sm:my-5 relative border-2 font-medium border-styled-green bg-transparent py-2.5 px-5 uppercase text-styled-green transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-styled-green before:transition-transform before:duration-300 before:content-[` `] hover:text-sidebar-bg before:hover:scale-x-100'>
-									Подробнее...
-								</button>
-							</Link>
-							{/* <Link
+							<Link
 								className='w-full'
 								href='https://mielofon.online/'
 								target='_blank'
 							>
 								<button className='w-full sm:w-max sm:my-5 relative border-2 font-medium border-styled-green bg-transparent py-2.5 px-5 uppercase text-styled-green transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-styled-green before:transition-transform before:duration-300 before:content-[` `] hover:text-sidebar-bg before:hover:scale-x-100'>
-									Demo
+									Демо
 								</button>
-							</Link> */}
+							</Link>
+							
+							<Link className='w-full' href='/pet'>
+								<button className='w-full sm:w-max sm:my-5 relative border-2 font-medium border-styled-green bg-transparent py-2.5 px-5 uppercase text-styled-green transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-styled-green before:transition-transform before:duration-300 before:content-[` `] hover:text-sidebar-bg before:hover:scale-x-100'>
+									Подробнее...
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>
